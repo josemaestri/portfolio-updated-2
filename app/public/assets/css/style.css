@@ -1,0 +1,47 @@
+
+
+body{
+  font-family: 'Source Code Pro', monospace;
+}
+
+
+
+ul{ 
+  list-style:none;
+}
+ul > li {
+  /* clear:left; */
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+}
+
+
+ul > li:before {
+  content:"";
+  height:1.25em;
+  width:1.25em;
+  line-height: 1.25rem;
+  display:block;
+  /* float:left; */
+  margin-right: .75em;
+  margin-left:-1.5em;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:100%:
+}
+
+
+li:before{
+  background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDBWMHoiLz48cGF0aCBkPSJNMTIgNGwtMS40MSAxLjQxTDE2LjE3IDExSDR2MmgxMi4xN2wtNS41OCA1LjU5TDEyIDIwbDgtOC04LTh6Ii8+PC9zdmc+");
+  background-size:90%;
+  background-position:center;
+  transition: background-size 0.3s;
+  -webkit-transition: background-size 0.3s;
+}
+li:hover:before{
+  background-size:100%;
+}

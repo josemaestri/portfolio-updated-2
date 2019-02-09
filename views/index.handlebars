@@ -1,0 +1,34 @@
+<div class="row border-bottom pb-3 mb-3 align-items-center">
+  <div class="col-12 col-md-9">
+    <h1>Hello, my name is Jose.</h1>
+    <p class="h2">And I am a web developer.</p>
+  </div>
+  <div class="col-12 col-md-3">
+    <ul>
+      {{#each link_item}}
+        <li><a href="{{link_url}}">{{link_name}}</a></li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
+
+<div class="row d-flex">
+  <div class="col-6 d-flex flex-column portfolio">
+    <p class="h3">Here is some of my work:</p>
+    <div class="arrow"></div>
+    <ul>
+      {{#each portfolio_item}}
+        <li class="mb-1"><a target="_blank" href="{{portfolio_url}}">{{portfolio_name}}</a></li>
+      {{/each}}
+    </ul>
+  </div>
+  <div class="col-6 about-me">
+    <h2 class="h3">About Me</h2>
+    <p>I like people. I like music. I like fun. I don't do boring. I am a simple man who is easily amused. The world is my playground. The Internet is my sandbox. I use it to work, to play, to learn, and to connect. I try to bring that out in my work. The web should reflect the world around us, not just the one in our screens.</p>
+
+    <p>I am but a humble developer and designer. Always learning, and always with the zeal and enthusiasm of a pupil eager to further develop his craft. I will never claim to know it all (and am wary of those who do), but I will never back down from a challenge; the proverbial comfort zone scares me more than the unknown. And to be honest, anyone who doesn't share that fear with me doesn't stick around for long.</p>
+
+    <p>So let's talk and make something. Let's push comfort zones. Let's reflect the world around us.</p>
+    {{!-- <img src="/assets/img/me.jpg" class="rounded img-thumbnail" alt="yep. it's me"> --}}
+  </div>
+</div>

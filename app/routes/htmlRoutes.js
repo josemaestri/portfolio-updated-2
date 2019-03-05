@@ -6,7 +6,14 @@ var data = require(path.join(__dirname,'../data/data.js'));
 // =========================
 module.exports = function(app){
   app.get('/',function(req,res){
-    res.render('index',data);
+    res.render('index',{
+      data: data,
+      helpers:{
+        ifEq: function(a,b,options){
+          return (a === b) ? options.fn(this) : options.inverse(this);
+        }
+      }
+    });
   });
 };
 

@@ -7,6 +7,9 @@ module.exports = {
     {
       'link_name': 'LinkedIn',
       'link_url': 'https://wwwlinkedin.com/in/josemaestri'
+    },{
+      'link_name': 'Email',
+      'link_url': 'mailto:maestri.jose@gmail.com'
     }
   ],
   'portfolio_item': [

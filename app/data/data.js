@@ -54,10 +54,6 @@ module.exports = {
       'portfolio_url': 'http://uprootd.herokuapp.com',
       'portfolio_type': 'project'
     },{
-      'portfolio_name': 'QOQ Records',
-      'portfolio_url': 'http://www.qoqrecords.com',
-      'portfolio_type': 'client'
-    },{
       'portfolio_name': 'Work at FHIA',
       'portfolio_url': 'http://workatfhia.com/',
       'portfolio_type': 'client'
